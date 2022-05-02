@@ -1,0 +1,78 @@
+﻿@model practica2.Customer
+
+@{
+    Layout = null;
+    ViewData["titulo"] = "CUSTOMER";
+    var Customer= ViewData["var1"] as practica2.Customer;
+    var Customer2= ViewData["var2"] as practica2.Customer;
+    var Customer3= ViewData["var3"] as practica2.Customer;
+    var Customer4= ViewData["var4"] as practica2.Customer;
+    var Customer5= ViewData["var5"] as practica2.Customer;
+
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Semana02_UESAN_FirstMVC.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container col-md-large" style="margin-top: 10%">
+        <h3 style= "text-align: center"> @ViewData["titulo"] </h3> 
+<table class="table table-bordered table-dark">
+    <tr>
+      <th>Id</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Country</th>
+      <th>Phone</th>
+    </tr>
+
+    <tr>
+      <td>@Customer.Id</td>
+      <td>@Customer.FullName</td>
+      <td>@Customer.Email</td>
+      <td>@Customer.Country</td>
+      <td>@Customer.Phone</td>
+    </tr>
+    <tr>
+      <td>@Customer2.Id</td>
+      <td>@Customer2.FullName</td>
+      <td>@Customer2.Email</td>
+      <td>@Customer2.Country</td>
+      <td>@Customer2.Phone</td>
+    </tr>
+    <tr>
+      <td>@Customer3.Id</td>
+      <td>@Customer3.FullName</td>
+      <td>@Customer3.Email</td>
+      <td>@Customer3.Country</td>
+      <td>@Customer3.Phone</td>
+    </tr>
+    <tr>
+      <td>@Customer4.Id</td>
+      <td>@Customer4.FullName</td>
+      <td>@Customer4.Email</td>
+      <td>@Customer4.Country</td>
+      <td>@Customer4.Phone</td>
+    </tr>
+    <tr>
+      <td>@Customer5.Id</td>
+      <td>@Customer5.FullName</td>
+      <td>@Customer5.Email</td>
+      <td>@Customer5.Country</td>
+      <td>@Customer5.Phone</td>
+    </tr>
+   </table>
+  </div>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </body>
+</html>
